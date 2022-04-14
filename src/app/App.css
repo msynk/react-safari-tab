@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-root {
+  display: flex;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.tab-root>.symbol {
+  max-width: 20px;
+  margin-right: 4px;
+}
+
+.tab-root>.label {
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.tab-root>.sup {
+  vertical-align: super;
+  font-size: x-small;
+}

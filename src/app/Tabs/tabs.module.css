@@ -1,0 +1,30 @@
+.tabs {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.tab {
+    display: flex;
+    padding: 8px 12px;
+    margin: 4px;
+    background-color: gray;
+    border-radius: 8px;
+    max-width: 10%;
+    transition: .3s;
+}
+
+.tab, .tab * {
+    cursor: pointer;
+}
+
+.tab.selected {
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+.tabContent {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
